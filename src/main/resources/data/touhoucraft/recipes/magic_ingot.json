@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "touhoucraft:magic_ore"
+  },
+  "result": "touhoucraft:magic_ingot",
+  "experience": 20,
+  "cookingtime": 200
+}
