@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "touhoucraft:block/magic_ore_model"
+    }
+  }
+}
