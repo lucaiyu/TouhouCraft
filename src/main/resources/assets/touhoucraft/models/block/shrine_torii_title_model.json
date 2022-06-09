@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "touhoucraft:block/char1",
+    "side": "touhoucraft:block/char2"
+  }
+}
