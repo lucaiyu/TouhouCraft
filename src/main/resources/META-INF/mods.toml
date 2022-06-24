@@ -9,9 +9,9 @@ modLoader="javafml" #mandatory
 loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 # The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
-license="All rights reserved"
+license="Copyright 2022 lucaiyu All rights reserved"
 # A URL to refer people to when problems occur with this mod
-issueTrackerURL="https://github.com/lucaiyu/TouHouCraft/issues" #optional
+issueTrackerURL="https://github.com/lucaiyu/TouhouCraft/issues" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
@@ -21,11 +21,11 @@ modId="touhoucraft" #mandatory
 # see the associated build.gradle script for how to populate this completely automatically during a build
 version="${file.jarVersion}" #mandatory
  # A display name for the mod
-displayName="東方礦工藝~Tou Hou Craft" #mandatory
+displayName="東方礦工藝~Touhou Craft" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
-updateJSONURL="https://github.com/lucaiyu/TouHouCraft" #optional
+updateJSONURL="https://github.com/lucaiyu/TouhouCraft" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL="https://github.com/lucaiyu/TouHouCraft" #optional
+displayURL="https://github.com/lucaiyu/TouhouCraft" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
