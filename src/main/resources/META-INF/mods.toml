@@ -33,7 +33,7 @@ credits="lucaiyu" #optional
 # A text field displayed in the mod UI
 authors="lucaiyu" #optional
 # The description text for the mod (multi line!) (#mandatory)
-#description=
+description="A mod about touhou and gensokyo"
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.touhoucraft]] #optional
     # the modid of the dependency
