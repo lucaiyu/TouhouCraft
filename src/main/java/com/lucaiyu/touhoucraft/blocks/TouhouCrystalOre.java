@@ -12,7 +12,7 @@ import net.minecraft.util.math.MathHelper;
 import java.util.Random;
 
 public class TouhouCrystalOre extends OreBlock {
-    private static IntegerProperty STATE = IntegerProperty.create("DIM", 0, 1);
+    private static IntegerProperty STATE = IntegerProperty.create("char", 0, 1);
     public TouhouCrystalOre(){
         super(Properties.of(Material.STONE).sound(SoundType.STONE).strength(5.0F,6.0F).harvestLevel(3).requiresCorrectToolForDrops());
 

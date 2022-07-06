@@ -8,7 +8,7 @@ import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
 
 public class MagicOre extends OreBlock {
-    private static IntegerProperty STATE = IntegerProperty.create("DIM", 0, 1);
+    private static IntegerProperty STATE = IntegerProperty.create("char", 0, 1);
     public MagicOre(){
         super(Properties.of(Material.STONE).strength(15,30).harvestLevel(3).requiresCorrectToolForDrops());
 
