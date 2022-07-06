@@ -1,5 +1,6 @@
 package com.lucaiyu.touhoucraft.items;
 
+import com.lucaiyu.touhoucraft.TouHouCraft;
 import com.lucaiyu.touhoucraft.blocks.BlockRegistry;
 import com.lucaiyu.touhoucraft.items.foods.ZunBeer;
 import com.lucaiyu.touhoucraft.groups.GroupRegistry;
@@ -14,7 +15,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemRegistry {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "touhoucraft");
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TouHouCraft.MOD_ID);
 
     public static RegistryObject<Item> guide_book = ITEMS.register("guide_book", () -> {
         return new GuideBook();
