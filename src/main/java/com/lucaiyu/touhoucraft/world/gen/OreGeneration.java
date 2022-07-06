@@ -15,6 +15,8 @@ public class OreGeneration {
     public static void generateOres(final BiomeLoadingEvent event){
         oreGenerate(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockRegistry.touhou_crystal_ore.get().defaultBlockState(), 8, 8, 0, 64, 8);
         oreGenerate(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockRegistry.magic_ore.get().defaultBlockState(), 8, 8, 0, 64, 8);
+        oreGenerate(event.getGeneration(), OreFeatureConfig.FillerBlockType.NETHER_ORE_REPLACEABLES, BlockRegistry.touhou_crystal_ore.get().defaultBlockState(), 8, 8, 0, 64, 8);
+        oreGenerate(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockRegistry.magic_ore.get().defaultBlockState(), 8, 8, 0, 64, 8);
     }
     private static void oreGenerate(BiomeGenerationSettingsBuilder settings,
                                     RuleTest fillerType,
