@@ -50,9 +50,6 @@ public class ItemRegistry {
     public static RegistryObject<Item> magic_axe = ITEMS.register("magic_axe",()->{
         return new MagicAxe();
     });
-    public static RegistryObject<Item> gensokyo_portal = ITEMS.register("gensokyo_portal",()->{
-        return new GensokyoPortal();
-    });
     public static RegistryObject<Item> shrine_torii_title = ITEMS.register("shrine_torii_title",()->{
         return new BlockItem(BlockRegistry.shrine_torii_title.get(),new Item.Properties().tab(GroupRegistry.touhouGroup));
     });

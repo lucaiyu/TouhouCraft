@@ -1,12 +1,10 @@
 {
   "variants": {
-    "": {
       "char=0": {
         "model": "shrine_torii_title_model_0"
       },
       "char=1": {
         "model": "shrine_torii_title_model_1"
       }
-    }
   }
 }
