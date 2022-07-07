@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cube_column",
   "textures": {
     "end": "touhoucraft:block/blank",
-    "side": "touhoucraft:block/char2"
+    "side": "touhoucraft:block/char0"
   }
 }

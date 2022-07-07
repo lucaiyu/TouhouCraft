@@ -17,4 +17,10 @@ public class BlockRegistry {
     public static RegistryObject<Block> shrine_torii_title = BLOCKS.register("shrine_torii_title",()->{
         return new ShrineToriiTitle();
     });
+    public static RegistryObject<Block> touhou_crystal_ore_in_nether = BLOCKS.register("touhou_crystal_ore_in_nether",()->{
+        return new TouhouCrystalOreInNether();
+    });
+    public static RegistryObject<Block> magic_ore_in_nether = BLOCKS.register("magic_ore_in_nether",()->{
+        return new MagicOreInNether();
+    });
 }
