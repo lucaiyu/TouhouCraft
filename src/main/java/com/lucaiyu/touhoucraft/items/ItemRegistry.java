@@ -53,4 +53,10 @@ public class ItemRegistry {
     public static RegistryObject<Item> shrine_torii_title = ITEMS.register("shrine_torii_title",()->{
         return new BlockItem(BlockRegistry.shrine_torii_title.get(),new Item.Properties().tab(GroupRegistry.touhouGroup));
     });
+    public static RegistryObject<Item> magic_ore_in_nether = ITEMS.register("magic_ore_in_nether",()->{
+        return new BlockItem(BlockRegistry.magic_ore_in_nether.get(),  new Item.Properties().tab(GroupRegistry.touhouGroup));
+    });
+    public static RegistryObject<Item> touhou_crystal_ore_in_nether = ITEMS.register("touhou_crystal_ore_in_nether",()->{
+        return new BlockItem(BlockRegistry.touhou_crystal_ore_in_nether.get(), new Item.Properties().tab(GroupRegistry.touhouGroup));
+    });
 }
