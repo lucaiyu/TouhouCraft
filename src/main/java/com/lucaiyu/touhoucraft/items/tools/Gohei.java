@@ -1,25 +1,25 @@
 package com.lucaiyu.touhoucraft.items.tools;
 
 import com.lucaiyu.touhoucraft.groups.GroupRegistry;
-import net.minecraft.item.BowItem;
 import net.minecraft.item.IItemTier;
+import net.minecraft.item.SwordItem;
 import net.minecraft.item.crafting.Ingredient;
 
-public class Gohei extends BowItem {
+public class Gohei extends SwordItem {
     private static final IItemTier iItemTier = new IItemTier() {
         @Override
         public int getUses() {
-            return 25565;
+            return 65536;
         }
 
         @Override
         public float getSpeed() {
-            return -2.4F;
+            return 0;
         }
 
         @Override
         public float getAttackDamageBonus() {
-            return 10.0F;
+            return 30.0F;
         }
 
         @Override
@@ -29,7 +29,7 @@ public class Gohei extends BowItem {
 
         @Override
         public int getEnchantmentValue() {
-            return 10;
+            return 0;
         }
 
         @Override
@@ -38,7 +38,7 @@ public class Gohei extends BowItem {
         }
     };
     public Gohei(){
-        super(new Properties().tab(GroupRegistry.touhouGroup));
+        super(iItemTier, 30, -2.4F, new Properties().fireResistant().tab(GroupRegistry.touhouGroup));
     }
 
 }

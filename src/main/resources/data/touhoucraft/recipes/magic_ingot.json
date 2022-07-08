@@ -1,7 +1,8 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "touhoucraft:magic_ore"
+    "item": "touhoucraft:magic_ore",
+    "item": "touhoucraft:magic_ore_in_nether"
   },
   "result": "touhoucraft:magic_ingot",
   "experience": 20,

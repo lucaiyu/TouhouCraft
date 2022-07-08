@@ -7,8 +7,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.crafting.Ingredient;
 
-import java.beans.PropertyChangeListener;
-
 public class MagicSword extends SwordItem {
     private static final IItemTier iItemTier=new IItemTier(){
         @Override
