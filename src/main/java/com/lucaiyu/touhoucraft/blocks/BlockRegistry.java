@@ -23,4 +23,7 @@ public class BlockRegistry {
     public static RegistryObject<Block> magic_ore_in_nether = BLOCKS.register("magic_ore_in_nether",()->{
         return new MagicOreInNether();
     });
+    public static RegistryObject<Block> donate_box = BLOCKS.register("donate_box",()->{
+        return new DonateBox();
+    });
 }
