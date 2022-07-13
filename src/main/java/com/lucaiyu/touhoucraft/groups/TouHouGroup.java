@@ -8,7 +8,7 @@ public class TouHouGroup extends ItemGroup {
     public TouHouGroup(){
         super("touhouGroup");
     }
-    public ItemStack makeIcon(){
+    public ItemStack createIcon(){
         return new ItemStack(ItemRegistry.gohei.get());
     }
 

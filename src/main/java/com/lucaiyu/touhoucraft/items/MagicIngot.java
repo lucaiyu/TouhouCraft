@@ -5,6 +5,6 @@ import net.minecraft.item.Item;
 
 public class MagicIngot extends Item {
     public MagicIngot() {
-        super(new Properties().tab(GroupRegistry.touhouGroup));
+        super(new Properties().group(GroupRegistry.touhouGroup));
     }
 }

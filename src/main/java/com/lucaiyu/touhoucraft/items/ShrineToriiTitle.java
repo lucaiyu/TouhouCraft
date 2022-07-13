@@ -5,6 +5,6 @@ import net.minecraft.item.Item;
 
 public class ShrineToriiTitle extends Item {
     public ShrineToriiTitle() {
-        super(new Properties().tab(GroupRegistry.touhouGroup));
+        super(new Properties().group(GroupRegistry.touhouGroup));
     }
 }

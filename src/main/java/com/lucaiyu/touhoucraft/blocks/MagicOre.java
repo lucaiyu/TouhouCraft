@@ -6,7 +6,7 @@ import net.minecraft.block.material.Material;
 public class MagicOre extends OreBlock {
     //private static IntegerProperty STATE = IntegerProperty.create("dim", 0, 1);
     public MagicOre(){
-        super(Properties.of(Material.STONE).strength(30.0F,1200.0F).harvestLevel(3).requiresCorrectToolForDrops());
+        super(Properties.create(Material.ROCK).hardnessAndResistance(30.0F,1200.0F).harvestLevel(3));
 
         //this.registerDefaultState(this.stateDefinition.any().setValue(STATE, 0));
     }

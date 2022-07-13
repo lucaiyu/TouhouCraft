@@ -10,12 +10,12 @@ import java.util.Random;
 public class TouhouCrystalOre extends OreBlock {
     //private static IntegerProperty STATE = IntegerProperty.create("dim", 0, 1);
     public TouhouCrystalOre(){
-        super(Properties.of(Material.STONE).sound(SoundType.STONE).strength(15.0F,1200.0F).harvestLevel(3).requiresCorrectToolForDrops());
+        super(Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(15.0F,1200.0F).harvestLevel(3));
 
         //this.registerDefaultState(this.stateDefinition.any().setValue(STATE, 0));
     }
     @Override
-    protected int xpOnDrop(Random random){
+    protected int getExperience(Random random){
         return MathHelper.nextInt(random, 2, 6);
     }
 

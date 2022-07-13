@@ -24,7 +24,7 @@ public class ItemRegistry {
         return new Gohei();
     });
     public static RegistryObject<Item> touhou_crystal_ore=ITEMS.register("touhou_crystal_ore",() ->{
-        return new BlockItem(BlockRegistry.touhou_crystal_ore.get(), new Item.Properties().tab(GroupRegistry.touhouGroup));
+        return new BlockItem(BlockRegistry.touhou_crystal_ore.get(), new Item.Properties().group(GroupRegistry.touhouGroup));
     });
     public static RegistryObject<Item> touhou_crystal=ITEMS.register("touhou_crystal",() ->{
         return new TouhouCrystal();
@@ -36,7 +36,7 @@ public class ItemRegistry {
         return new BeerCup();
     });
     public static RegistryObject<Item> magic_ore = ITEMS.register("magic_ore",()->{
-        return new BlockItem(BlockRegistry.magic_ore.get(),new Item.Properties().tab(GroupRegistry.touhouGroup));
+        return new BlockItem(BlockRegistry.magic_ore.get(),new Item.Properties().group(GroupRegistry.touhouGroup));
     });
     public static RegistryObject<Item> magic_ingot = ITEMS.register("magic_ingot",()->{
         return new MagicIngot();
@@ -51,12 +51,12 @@ public class ItemRegistry {
         return new MagicAxe();
     });
     public static RegistryObject<Item> shrine_torii_title = ITEMS.register("shrine_torii_title",()->{
-        return new BlockItem(BlockRegistry.shrine_torii_title.get(),new Item.Properties().tab(GroupRegistry.touhouGroup));
+        return new BlockItem(BlockRegistry.shrine_torii_title.get(),new Item.Properties().group(GroupRegistry.touhouGroup));
     });
     public static RegistryObject<Item> magic_ore_in_nether = ITEMS.register("magic_ore_in_nether",()->{
-        return new BlockItem(BlockRegistry.magic_ore_in_nether.get(),  new Item.Properties().tab(GroupRegistry.touhouGroup));
+        return new BlockItem(BlockRegistry.magic_ore_in_nether.get(),  new Item.Properties().group(GroupRegistry.touhouGroup));
     });
     public static RegistryObject<Item> touhou_crystal_ore_in_nether = ITEMS.register("touhou_crystal_ore_in_nether",()->{
-        return new BlockItem(BlockRegistry.touhou_crystal_ore_in_nether.get(), new Item.Properties().tab(GroupRegistry.touhouGroup));
+        return new BlockItem(BlockRegistry.touhou_crystal_ore_in_nether.get(), new Item.Properties().group(GroupRegistry.touhouGroup));
     });
 }

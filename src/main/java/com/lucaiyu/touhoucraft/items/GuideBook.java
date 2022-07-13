@@ -5,6 +5,6 @@ import net.minecraft.item.Item;
 
 public class GuideBook extends Item {
     public GuideBook(){
-        super(new Properties().tab(GroupRegistry.touhouGroup));
+        super(new Properties().group(GroupRegistry.touhouGroup));
     }
 }

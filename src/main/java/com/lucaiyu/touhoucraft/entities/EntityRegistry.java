@@ -12,6 +12,6 @@ public class EntityRegistry {
 
     public static RegistryObject<EntityType<PowerPoint>> power_point =
             ENTITIES.register("power_point",
-                    ()->EntityType.Builder.<PowerPoint>of(PowerPoint::new, EntityClassification.MISC)
-                            .sized(1.0F, 1.0F).build("power_point"));
+                    ()->EntityType.Builder.<PowerPoint>create(PowerPoint::new, EntityClassification.MISC)
+                            .size(1.0F, 1.0F).build("power_point"));
 }

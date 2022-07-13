@@ -11,13 +11,13 @@ public class ShrineToriiTitle extends Block {
     private static IntegerProperty STATE = IntegerProperty.create("char", 0, 1);
 
     public ShrineToriiTitle() {
-        super(Properties.of(Material.STONE).sound(SoundType.STONE).strength(5.0F,5.0F));
+        super(Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(5.0F,5.0F));
 
-        this.registerDefaultState(this.stateDefinition.any().setValue(STATE, 0));
+        this.setDefaultState(this.stateContainer.getBaseState().with(STATE, 1));
     }
 
     @Override
-    protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder) {
+    protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(STATE);
     }
 }

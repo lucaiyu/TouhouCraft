@@ -9,10 +9,10 @@ import java.util.Random;
 
 public class TouhouCrystalOreInNether extends OreBlock {
     public TouhouCrystalOreInNether(){
-        super(Properties.of(Material.STONE).strength(15.0F,1200.0F).harvestLevel(3).requiresCorrectToolForDrops());
+        super(Properties.create(Material.ROCK).hardnessAndResistance(15.0F,1200.0F).harvestLevel(3));
     }
     @Override
-    protected int xpOnDrop(Random random){
+    protected int getExperience(Random random){
         return MathHelper.nextInt(random, 2,6);
     }
 }

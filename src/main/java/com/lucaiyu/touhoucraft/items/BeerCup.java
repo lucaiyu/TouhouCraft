@@ -5,6 +5,6 @@ import net.minecraft.item.Item;
 
 public class BeerCup extends Item {
     public BeerCup() {
-        super(new Properties().tab(GroupRegistry.touhouGroup));
+        super(new Properties().group(GroupRegistry.touhouGroup));
     }
 }
