@@ -9,37 +9,37 @@ import net.minecraft.item.crafting.Ingredient;
 public class MagicPickaxe extends PickaxeItem {
     private static final IItemTier iItemTier = new IItemTier(){
         @Override
-        public int getUses() {
-            return 512;
+        public int getMaxUses() {
+            return 256;
         }
 
         @Override
-        public float getSpeed() {
+        public float getEfficiency() {
             return 30.0F;
         }
 
         @Override
-        public int getEnchantmentValue() {
-            return 30;
+        public float getAttackDamage() {
+            return 6.0F;
         }
 
         @Override
-        public int getLevel() {
+        public int getHarvestLevel() {
             return 3;
         }
 
         @Override
-        public float getAttackDamageBonus() {
-            return 7.0F;
+        public int getEnchantability() {
+            return 0;
         }
 
         @Override
-        public Ingredient getRepairIngredient() {
-            return Ingredient.of(ItemRegistry.magic_ingot.get());
+        public Ingredient getRepairMaterial() {
+            return Ingredient.fromItems(ItemRegistry.magic_ingot.get());
         }
     };
 
     public MagicPickaxe(){
-        super(iItemTier,0,0.0F,new Properties().tab(GroupRegistry.touhouGroup));
+        super(iItemTier,0,0.0F,new Properties().group(GroupRegistry.touhouGroup));
     }
 }

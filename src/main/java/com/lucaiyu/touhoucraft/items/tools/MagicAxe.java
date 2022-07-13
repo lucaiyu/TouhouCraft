@@ -9,36 +9,36 @@ import net.minecraft.item.crafting.Ingredient;
 public class MagicAxe extends AxeItem {
     private static final IItemTier iItemTier = new IItemTier() {
         @Override
-        public int getUses() {
+        public int getMaxUses() {
             return 512;
         }
 
         @Override
-        public float getSpeed() {
+        public float getEfficiency() {
             return 30.0F;
         }
 
         @Override
-        public float getAttackDamageBonus() {
+        public float getAttackDamage() {
             return 16.0F;
         }
 
         @Override
-        public int getLevel() {
+        public int getHarvestLevel() {
+            return 3;
+        }
+
+        @Override
+        public int getEnchantability() {
             return 0;
         }
 
         @Override
-        public int getEnchantmentValue() {
-            return 30;
-        }
-
-        @Override
-        public Ingredient getRepairIngredient() {
-            return Ingredient.of(ItemRegistry.magic_ingot.get());
+        public Ingredient getRepairMaterial() {
+            return Ingredient.fromItems(ItemRegistry.magic_ingot.get());
         }
     };
     public MagicAxe(){
-        super(iItemTier,0,0.0F,new Properties().tab(GroupRegistry.touhouGroup));
+        super(iItemTier,0,0.0F,new Properties().group(GroupRegistry.touhouGroup));
     }
 }

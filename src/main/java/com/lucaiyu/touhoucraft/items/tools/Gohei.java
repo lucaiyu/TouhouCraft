@@ -8,37 +8,37 @@ import net.minecraft.item.crafting.Ingredient;
 public class Gohei extends SwordItem {
     private static final IItemTier iItemTier = new IItemTier() {
         @Override
-        public int getUses() {
-            return 65536;
+        public int getMaxUses() {
+            return 65535;
         }
 
         @Override
-        public float getSpeed() {
-            return 0;
+        public float getEfficiency() {
+            return 20.0F;
         }
 
         @Override
-        public float getAttackDamageBonus() {
+        public float getAttackDamage() {
             return 30.0F;
         }
 
         @Override
-        public int getLevel() {
+        public int getHarvestLevel() {
+            return 3;
+        }
+
+        @Override
+        public int getEnchantability() {
             return 0;
         }
 
         @Override
-        public int getEnchantmentValue() {
-            return 0;
-        }
-
-        @Override
-        public Ingredient getRepairIngredient() {
+        public Ingredient getRepairMaterial() {
             return null;
         }
     };
     public Gohei(){
-        super(iItemTier, 30, -2.4F, new Properties().fireResistant().tab(GroupRegistry.touhouGroup));
+        super(iItemTier, 30, -2.4F, new Properties().isImmuneToFire().group(GroupRegistry.touhouGroup));
     }
 
 }
