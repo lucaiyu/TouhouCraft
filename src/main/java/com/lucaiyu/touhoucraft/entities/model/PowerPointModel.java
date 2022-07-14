@@ -10,8 +10,8 @@ public class PowerPointModel extends EntityModel<PowerPoint> {
 	private final ModelRenderer bb_main;
 
 	public PowerPointModel() {
-		textureWidth = 64;
-		textureHeight = 64;
+		textureWidth = 16;
+		textureHeight = 16;
 
 		bb_main = new ModelRenderer(this);
 		bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
@@ -25,11 +25,5 @@ public class PowerPointModel extends EntityModel<PowerPoint> {
 	@Override
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		bb_main.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-	}
-
-	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
 	}
 }
