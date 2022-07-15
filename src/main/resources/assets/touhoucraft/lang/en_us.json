@@ -9,5 +9,6 @@
   "block.touhoucraft.magic_ore": "Magic Ore",
   "item.touhoucraft.magic_ingot": "Magic Ingot",
   "item.touhoucraft.magic_sword": "Magic Sword",
-  "item.touhoucraft.magic_pickaxe": "Magic Pickaxe"
+  "item.touhoucraft.magic_pickaxe": "Magic Pickaxe",
+  "gui.touhoucraft.guide_book": "東方Project"
 }
