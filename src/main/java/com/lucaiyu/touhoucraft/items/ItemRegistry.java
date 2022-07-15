@@ -17,9 +17,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TouHouCraft.MOD_ID);
 
-    public static RegistryObject<Item> guide_book = ITEMS.register("guide_book", () -> {
-        return new GuideBook();
-    });
+    //public static RegistryObject<Item> guide_book = ITEMS.register("guide_book", () -> {
+        //return new GuideBook();
+    //});
     public static RegistryObject<Item> gohei = ITEMS.register("gohei", () -> {
         return new Gohei();
     });
@@ -59,4 +59,5 @@ public class ItemRegistry {
     public static RegistryObject<Item> touhou_crystal_ore_in_nether = ITEMS.register("touhou_crystal_ore_in_nether",()->{
         return new BlockItem(BlockRegistry.touhou_crystal_ore_in_nether.get(), new Item.Properties().group(GroupRegistry.touhouGroup));
     });
+    public static final RegistryObject<Item> GUI_ITEM = ITEMS.register("guide_book",GuideBook::new);
 }
