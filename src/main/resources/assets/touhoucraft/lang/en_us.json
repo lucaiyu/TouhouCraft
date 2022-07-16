@@ -10,5 +10,6 @@
   "item.touhoucraft.magic_ingot": "Magic Ingot",
   "item.touhoucraft.magic_sword": "Magic Sword",
   "item.touhoucraft.magic_pickaxe": "Magic Pickaxe",
-  "gui.touhoucraft.guide_book": "東方Project"
+  "gui.touhoucraft.guide_book_title": "Project Shrine Maiden",
+  "gui.touhoucraft.guide_book_testbutton": "Test button"
 }
