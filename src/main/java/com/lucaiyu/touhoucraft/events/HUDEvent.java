@@ -20,6 +20,6 @@ public class HUDEvent {
             return;
         }
         Capture capture = new Capture(event.getMatrixStack());
-        capture.render();
+        capture.render(0);
     }
 }
