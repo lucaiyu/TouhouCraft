@@ -36,23 +36,22 @@ public class Capture extends AbstractGui {
         RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
         switch (captureId) {
             case 0:
-                this.minecraft.getTextureManager().bindTexture(REIMU_ANGRY);
+                this.minecraft.getTextureManager().bindTexture(REIMU_ANGRY);break;
             case 1:
-                this.minecraft.getTextureManager().bindTexture(REIMU_SING);
+                this.minecraft.getTextureManager().bindTexture(REIMU_SING);break;
             case 2:
-                this.minecraft.getTextureManager().bindTexture(REIMU_HAPPY_1);
+                this.minecraft.getTextureManager().bindTexture(REIMU_HAPPY_1);break;
             case 3:
-                this.minecraft.getTextureManager().bindTexture(REIMU_HAPPY_2);
+                this.minecraft.getTextureManager().bindTexture(REIMU_HAPPY_2);break;
             case 4:
-                this.minecraft.getTextureManager().bindTexture(REIMU);
+                this.minecraft.getTextureManager().bindTexture(REIMU);break;
             case 5:
-                this.minecraft.getTextureManager().bindTexture(REIMU_SAD);
+                this.minecraft.getTextureManager().bindTexture(REIMU_SAD);break;
             case 6:
-                this.minecraft.getTextureManager().bindTexture(REIMU_SURPRISE);
+                this.minecraft.getTextureManager().bindTexture(REIMU_SURPRISE);break;
             case 7:
-                this.minecraft.getTextureManager().bindTexture(REIMU_TIRED);
+                this.minecraft.getTextureManager().bindTexture(REIMU_TIRED);break;
         }
-        blit(matrixStack, 0, height-256, 0, 0, 256, 256, 256, 256);
-        System.out.println("Rendering capture");
+        blit(matrixStack, 0, height-128, 0, 0, 128, 128, 128, 128);
     }
 }

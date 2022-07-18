@@ -19,9 +19,11 @@ import org.apache.logging.log4j.Logger;
 public class PowerPoint extends Entity {
     private Logger logger = LogManager.getLogger();
     private static final DataParameter<Integer> COUNTER = EntityDataManager.createKey(PowerPoint.class, DataSerializers.VARINT);
-    public PowerPoint(World worldIn){
+
+    public PowerPoint(World worldIn) {
         this(null, worldIn);
     }
+
     public PowerPoint(EntityType<? extends Entity> type, World worldIn) {
         super(type, worldIn);
     }
@@ -46,6 +48,7 @@ public class PowerPoint extends Entity {
     public IPacket<?> createSpawnPacket() {
         return NetworkHooks.getEntitySpawningPacket(this);
     }
+
     @Override
     public void tick() {
         if (world.isRemote) {
@@ -56,9 +59,5 @@ public class PowerPoint extends Entity {
             this.dataManager.set(COUNTER, this.dataManager.get(COUNTER) + 1);
         }
         super.tick();
-    }
-
-    public static AttributeModifierMap.MutableAttribute func_234192_eI_() {
-        return MobEntity.func_233666_p_().createMutableAttribute(Attributes.MAX_HEALTH, 10.0D);
     }
 }
