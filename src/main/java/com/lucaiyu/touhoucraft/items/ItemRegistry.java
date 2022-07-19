@@ -59,8 +59,8 @@ public class ItemRegistry {
         return new BlockItem(BlockRegistry.touhou_crystal_ore_in_nether.get(), new Item.Properties().group(GroupRegistry.touhouGroup));
     });
     public static final RegistryObject<Item> GUI_ITEM = ITEMS.register("guide_book",GuideBook::new);
-    public static final RegistryObject<Item> hakurei_decorations = ITEMS.register("obsidian_helmet", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.HEAD, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
-    public static final RegistryObject<Item> hakurei_clothes = ITEMS.register("obsidian_chestplate", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.CHEST, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
-    public static final RegistryObject<Item> hakurei_dress = ITEMS.register("obsidian_leggings", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.LEGS, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
-    public static final RegistryObject<Item> mary_jane_shoes = ITEMS.register("obsidian_boots", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.FEET, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
+    public static final RegistryObject<Item> hakurei_decorations = ITEMS.register("hakurei_decorations", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.HEAD, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
+    public static final RegistryObject<Item> hakurei_clothes = ITEMS.register("hakurei_clothes", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.CHEST, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
+    public static final RegistryObject<Item> hakurei_dress = ITEMS.register("hakurei_dress", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.LEGS, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
+    public static final RegistryObject<Item> mary_jane_shoes = ITEMS.register("mary_jane_shoes", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.FEET, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
 }
