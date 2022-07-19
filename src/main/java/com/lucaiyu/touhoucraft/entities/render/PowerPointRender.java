@@ -1,6 +1,7 @@
 package com.lucaiyu.touhoucraft.entities.render;
 
 import com.lucaiyu.touhoucraft.TouHouCraft;
+import com.lucaiyu.touhoucraft.entities.HakureiReimu;
 import com.lucaiyu.touhoucraft.entities.PowerPoint;
 import com.lucaiyu.touhoucraft.entities.model.PowerPointModel;
 import com.mojang.blaze3d.matrix.MatrixStack;

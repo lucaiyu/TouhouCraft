@@ -1,0 +1,12 @@
+{
+  "dream_battle": {
+    "subtitle": "dream_battle",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:dream_battle",
+        "stream": true
+      }
+    ]
+  }
+}
