@@ -1,4 +1,4 @@
-package com.lucaiyu.touhoucraft.events;
+package com.lucaiyu.touhoucraft.client;
 
 import com.lucaiyu.touhoucraft.entities.EntityRegistry;
 import com.lucaiyu.touhoucraft.entities.render.HakureiReimuRender;

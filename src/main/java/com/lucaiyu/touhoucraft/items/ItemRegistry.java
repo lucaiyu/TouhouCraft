@@ -16,6 +16,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.lwjgl.system.CallbackI;
 
 public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TouHouCraft.MOD_ID);
@@ -63,4 +64,7 @@ public class ItemRegistry {
     public static final RegistryObject<Item> hakurei_clothes = ITEMS.register("hakurei_clothes", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.CHEST, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
     public static final RegistryObject<Item> hakurei_dress = ITEMS.register("hakurei_dress", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.LEGS, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
     public static final RegistryObject<Item> mary_jane_shoes = ITEMS.register("mary_jane_shoes", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.FEET, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
+    public static final RegistryObject<Item> donate_box = ITEMS.register("donate_box", ()->{
+        return new BlockItem(BlockRegistry.donate_box.get(),new Item.Properties().group(GroupRegistry.touhouGroup));
+    });
 }
