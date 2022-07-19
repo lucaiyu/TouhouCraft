@@ -1,6 +1,7 @@
 package com.lucaiyu.touhoucraft.events;
 
 import com.lucaiyu.touhoucraft.entities.EntityRegistry;
+import com.lucaiyu.touhoucraft.entities.render.HakureiReimuRender;
 import com.lucaiyu.touhoucraft.entities.render.PowerPointRender;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
@@ -17,6 +18,7 @@ public class ClientEvent {
             Minecraft mc = Minecraft.getInstance();
             EntityRendererManager manager = mc.getRenderManager();
             manager.register(EntityRegistry.power_point.get(), new PowerPointRender(manager));
+            manager.register(EntityRegistry.hakurei_reimu.get(), new HakureiReimuRender(manager));
         });
     }
 }

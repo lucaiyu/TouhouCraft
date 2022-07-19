@@ -13,7 +13,6 @@ public class HakureiReimu extends AnimalEntity {
 
     public HakureiReimu(EntityType<? extends AnimalEntity> type, World worldIn) {
         super(type, worldIn);
-        //this.goalSelector.addGoal(0, new ObsidianGoal(this));
         this.getAttributeManager().createInstanceIfAbsent(Attributes.MAX_HEALTH);
         this.getAttributeManager().createInstanceIfAbsent(Attributes.MOVEMENT_SPEED);
     }

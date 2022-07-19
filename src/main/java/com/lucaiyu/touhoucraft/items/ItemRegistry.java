@@ -2,12 +2,15 @@ package com.lucaiyu.touhoucraft.items;
 
 import com.lucaiyu.touhoucraft.TouHouCraft;
 import com.lucaiyu.touhoucraft.blocks.BlockRegistry;
+import com.lucaiyu.touhoucraft.items.armors.ModArmorMaterial;
 import com.lucaiyu.touhoucraft.items.foods.ZunBeer;
 import com.lucaiyu.touhoucraft.groups.GroupRegistry;
 import com.lucaiyu.touhoucraft.items.tools.Gohei;
 import com.lucaiyu.touhoucraft.items.tools.MagicAxe;
 import com.lucaiyu.touhoucraft.items.tools.MagicPickaxe;
 import com.lucaiyu.touhoucraft.items.tools.MagicSword;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -16,10 +19,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TouHouCraft.MOD_ID);
-
-    //public static RegistryObject<Item> guide_book = ITEMS.register("guide_book", () -> {
-        //return new GuideBook();
-    //});
     public static RegistryObject<Item> gohei = ITEMS.register("gohei", () -> {
         return new Gohei();
     });
@@ -60,4 +59,8 @@ public class ItemRegistry {
         return new BlockItem(BlockRegistry.touhou_crystal_ore_in_nether.get(), new Item.Properties().group(GroupRegistry.touhouGroup));
     });
     public static final RegistryObject<Item> GUI_ITEM = ITEMS.register("guide_book",GuideBook::new);
+    public static final RegistryObject<Item> hakurei_decorations = ITEMS.register("obsidian_helmet", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.HEAD, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
+    public static final RegistryObject<Item> hakurei_clothes = ITEMS.register("obsidian_chestplate", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.CHEST, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
+    public static final RegistryObject<Item> hakurei_dress = ITEMS.register("obsidian_leggings", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.LEGS, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
+    public static final RegistryObject<Item> mary_jane_shoes = ITEMS.register("obsidian_boots", () -> new ArmorItem(ModArmorMaterial.HAKUREI, EquipmentSlotType.FEET, (new Item.Properties()).group(GroupRegistry.touhouGroup)));
 }
