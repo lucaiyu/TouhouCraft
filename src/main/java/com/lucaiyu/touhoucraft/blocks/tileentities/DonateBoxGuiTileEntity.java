@@ -1,6 +1,7 @@
 package com.lucaiyu.touhoucraft.blocks.tileentities;
 
 import com.lucaiyu.touhoucraft.TouHouCraft;
+import com.lucaiyu.touhoucraft.containers.DonateBoxContainer;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -39,7 +40,9 @@ public class DonateBoxGuiTileEntity extends TileEntity implements ITickableTileE
     }
 
     @Override
-    public void tick() {}
+    public void tick() {
+        // todo
+    }
 
     @Override
     public ITextComponent getDisplayName() {
@@ -49,6 +52,6 @@ public class DonateBoxGuiTileEntity extends TileEntity implements ITickableTileE
     @Nullable
     @Override
     public Container createMenu(int id, PlayerInventory playerInventory, PlayerEntity playerEntity) {
-        return null;
+        return new DonateBoxContainer(id, playerInventory, this);
     }
 }

@@ -2,6 +2,7 @@ package com.lucaiyu.touhoucraft;
 
 import com.lucaiyu.touhoucraft.blocks.BlockRegistry;
 import com.lucaiyu.touhoucraft.blocks.tileentities.TileEntityRegistry;
+import com.lucaiyu.touhoucraft.client.ContainerRegistry;
 import com.lucaiyu.touhoucraft.entities.EntityRegistry;
 import com.lucaiyu.touhoucraft.items.ItemRegistry;
 
@@ -22,6 +23,7 @@ public class TouHouCraft{
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
         EntityRegistry.ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
         TileEntityRegistry.TILE_ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ContainerRegistry.CONTAINER_TYPE.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
 

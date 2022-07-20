@@ -1,9 +1,12 @@
 package com.lucaiyu.touhoucraft.containers;
 
+import com.lucaiyu.touhoucraft.blocks.BlockRegistry;
 import com.lucaiyu.touhoucraft.blocks.tileentities.DonateBoxGuiTileEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
+import net.minecraft.inventory.container.Slot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
@@ -28,7 +31,12 @@ public class DonateBoxContainer extends Container {
         this.UP.ifPresent((s)->{
             this.addSlot(new SlotItemHandler(s, 0, 80, 32));
         });
-
+        for (int i = 0;i < 8; i++) {
+            this.addSlot(new Slot(playerInventory,i,i*18+8,152));
+            this.addSlot(new Slot(playerInventory,i+9,i*18+8,94));
+            this.addSlot(new Slot(playerInventory,i+18,i*18+8,112));
+            this.addSlot(new Slot(playerInventory,i+27,i*18+8,130));
+        }
     }
 
     public DonateBoxContainer(final int id, final PlayerInventory playerInventory, final PacketBuffer data) {
@@ -49,6 +57,11 @@ public class DonateBoxContainer extends Container {
 
     @Override
     public boolean canInteractWith(PlayerEntity playerIn) {
-        return false;
+        return isWithinUsableDistance(ableToInteract, playerIn, BlockRegistry.donate_box.get());
+    }
+
+    @Override
+    public ItemStack transferStackInSlot(PlayerEntity playerIn, int index) {
+        return ItemStack.EMPTY;
     }
 }
