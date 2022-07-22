@@ -2,7 +2,7 @@ package com.lucaiyu.touhoucraft;
 
 import com.lucaiyu.touhoucraft.blocks.BlockRegistry;
 import com.lucaiyu.touhoucraft.blocks.tileentities.TileEntityRegistry;
-import com.lucaiyu.touhoucraft.client.ContainerRegistry;
+import com.lucaiyu.touhoucraft.containers.ContainerRegistry;
 import com.lucaiyu.touhoucraft.entities.EntityRegistry;
 import com.lucaiyu.touhoucraft.items.ItemRegistry;
 

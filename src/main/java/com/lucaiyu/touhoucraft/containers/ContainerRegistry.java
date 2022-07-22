@@ -1,4 +1,4 @@
-package com.lucaiyu.touhoucraft.client;
+package com.lucaiyu.touhoucraft.containers;
 
 import com.lucaiyu.touhoucraft.TouHouCraft;
 import com.lucaiyu.touhoucraft.containers.DonateBoxContainer;

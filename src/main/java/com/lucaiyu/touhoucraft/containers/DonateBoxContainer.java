@@ -24,7 +24,7 @@ public class DonateBoxContainer extends Container {
     private final IWorldPosCallable ableToInteract;
     private final LazyOptional<IItemHandler> UP;
     public DonateBoxContainer(final int id, final PlayerInventory playerInventory, final DonateBoxGuiTileEntity entity){
-        super(null, id);
+        super(ContainerRegistry.donate_box_container.get(), id);
         this.tileentity = entity;
         this.ableToInteract = IWorldPosCallable.of(tileentity.getWorld(), tileentity.getPos());
         this.UP = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, Direction.UP);
