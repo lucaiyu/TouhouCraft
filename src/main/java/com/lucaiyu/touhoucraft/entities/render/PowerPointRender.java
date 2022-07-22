@@ -21,10 +21,6 @@ public class PowerPointRender extends EntityRenderer<PowerPoint> {
         super(renderManagerIn);
         powerPointModel = new PowerPointModel();
     }
-    //public PowerPointRender(EntityRendererManager renderManagerIn, PowerPointModel entityModelIn, float shadowSizeIn) {
-        //super(renderManagerIn, entityModelIn, shadowSizeIn);
-    //}
-
     @Override
     public ResourceLocation getEntityTexture(PowerPoint entity) {
         return POWER_POINT_TEXTURE;
