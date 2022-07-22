@@ -18,6 +18,6 @@ public class HakureiReimuRender extends MobRenderer<HakureiReimu, HakureiReimuMo
 
     @Override
     public ResourceLocation getEntityTexture(HakureiReimu entity) {
-        return new ResourceLocation(TouHouCraft.MOD_ID, "textures/entity/obsidian_animal.png");
+        return new ResourceLocation(TouHouCraft.MOD_ID, "textures/entity/hakurei_reimu.png");
     }
 }

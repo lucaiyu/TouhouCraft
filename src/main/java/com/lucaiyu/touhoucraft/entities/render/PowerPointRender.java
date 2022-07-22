@@ -16,7 +16,7 @@ import net.minecraft.util.math.vector.Vector3f;
 
 public class PowerPointRender extends EntityRenderer<PowerPoint> {
     private EntityModel<PowerPoint> powerPointModel;
-    private static final ResourceLocation POWER_POINT_TEXTURE = new ResourceLocation(TouHouCraft.MOD_ID, "texture/entity/power_point.png");
+    private static final ResourceLocation POWER_POINT_TEXTURE = new ResourceLocation(TouHouCraft.MOD_ID, "textures/entity/power_point.png");
     public PowerPointRender(EntityRendererManager renderManagerIn) {
         super(renderManagerIn);
         powerPointModel = new PowerPointModel();

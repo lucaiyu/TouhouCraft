@@ -32,7 +32,7 @@ public class Capture extends AbstractGui {
     public void setMatrixStack(MatrixStack stack) {
         this.matrixStack = stack;
     }
-    public void render(int captureId, String girl, String message) {
+    public void render(int captureId, String message) {
         RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
         switch (captureId) {
             case 0:
@@ -53,6 +53,6 @@ public class Capture extends AbstractGui {
                 this.minecraft.getTextureManager().bindTexture(REIMU_TIRED);break;
         }
         blit(matrixStack, 0, height-172, 0, 0, 128, 128, 128, 128);
-        drawCenteredString(this.matrixStack, this.minecraft.fontRenderer, girl + " : " + message, 32, height-32, 0xFFFFFF);
+        drawCenteredString(this.matrixStack, this.minecraft.fontRenderer, message, 32, height-32, 0xFFFFFF);
     }
 }
