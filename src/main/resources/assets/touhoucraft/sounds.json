@@ -1,10 +1,150 @@
 {
-  "dream_battle": {
-    "subtitle": "dream_battle",
+  "TH10_01": {
+    "subtitle": "TH10_01",
     "replace": "true",
     "sounds": [
       {
-        "name": "touhoucraft:dream_battle",
+        "name": "touhoucraft:TH10_01",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_02": {
+    "subtitle": "TH10_02",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_02",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_03": {
+    "subtitle": "TH10_03",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_03",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_04": {
+    "subtitle": "TH10_04",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_04",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_05": {
+    "subtitle": "TH10_05",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_05",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_06": {
+    "subtitle": "TH10_06",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_06",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_07": {
+    "subtitle": "TH10_07",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_07",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_08": {
+    "subtitle": "TH10_08",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_08",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_09": {
+    "subtitle": "TH10_09",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_09",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_10": {
+    "subtitle": "TH10_10",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_10",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_11": {
+    "subtitle": "TH10_11",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_11",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_12": {
+    "subtitle": "TH10_12",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_12",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_13": {
+    "subtitle": "TH10_13",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_13",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_14": {
+    "subtitle": "TH10_14",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_14",
+        "stream": true
+      }
+    ]
+  },
+  "TH10_15": {
+    "subtitle": "TH10_15",
+    "replace": "true",
+    "sounds": [
+      {
+        "name": "touhoucraft:TH10_15",
         "stream": true
       }
     ]

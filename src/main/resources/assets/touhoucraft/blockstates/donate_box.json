@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "touhoucraft:block/donate_box_model"
+    }
+  }
+}
