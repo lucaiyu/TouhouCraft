@@ -21,6 +21,8 @@ public class KeyBoardInput {
         if (JUMP_DIALOGUE.isPressed()) {
             assert Minecraft.getInstance().player != null;
             Dialogue.jump = true;
+            System.out.println("Keyboard event In" + Dialogue.jump);
         }
+        System.out.println("Keyboard event Out" + Dialogue.jump);
     }
 }

@@ -21,8 +21,8 @@ public class ClientRenderEvent {
         Minecraft minecraft = Minecraft.getInstance();
         Entity renderViewEntity = minecraft.getRenderViewEntity();
         if (renderViewEntity instanceof PlayerEntity){
-            //Dialogue dialogue = new Dialogue(0, event.getMatrixStack());
-            //dialogue.RenderDialogue();
+            Dialogue dialogue = new Dialogue(0, event.getMatrixStack());
+            dialogue.RenderDialogue();
         }
     }
 }

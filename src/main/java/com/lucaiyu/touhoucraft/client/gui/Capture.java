@@ -53,6 +53,6 @@ public class Capture extends AbstractGui {
                 this.minecraft.getTextureManager().bindTexture(REIMU_TIRED);break;
         }
         blit(matrixStack, 0, height-172, 0, 0, 128, 128, 128, 128);
-        drawCenteredString(this.matrixStack, this.minecraft.fontRenderer, message, 32, height-32, 0xFFFFFF);
+        drawCenteredString(this.matrixStack, this.minecraft.fontRenderer, message, 64, height-32, 0xFFFFFF);
     }
 }

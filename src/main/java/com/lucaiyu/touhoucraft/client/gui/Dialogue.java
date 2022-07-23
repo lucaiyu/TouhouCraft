@@ -13,10 +13,10 @@ public class Dialogue {
         this.matrixStack = matrixStack;
         switch (dialogue_id){
             case 0: {
-                this.DialogueList.add("落ち葉で視界が良くないわね");
-                this.DialogueList.add("こんな調子で山に立ち入って大丈夫かしら？");
-                this.DialogueList.add("あれ？");
-                this.DialogueList.add("何だか美味しそうな匂いが……");
+                this.DialogueList.add("Sentence 1");
+                this.DialogueList.add("sentence 2");
+                this.DialogueList.add("Sentence 3");
+                this.DialogueList.add("Sentence 4");
                 break;
             }
             default:{
@@ -27,8 +27,15 @@ public class Dialogue {
     public void RenderDialogue(){
         Capture capture = new Capture(this.matrixStack);
         capture.render(5, DialogueList.get(this.message_counter));
-        if (jump == true) {
+        System.out.println("Before" + message_counter +" " +jump);
+        if (jump) {
             this.message_counter++;
+            jump = false;
+            System.out.println("In" + message_counter +" " +jump);
         }
+        if (this.message_counter >= 3){
+            this.message_counter = 0;
+        }
+        System.out.println("After" + message_counter +" " +jump);
     }
 }
