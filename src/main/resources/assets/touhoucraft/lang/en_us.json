@@ -11,5 +11,7 @@
   "item.touhoucraft.magic_sword": "Magic Sword",
   "item.touhoucraft.magic_pickaxe": "Magic Pickaxe",
   "gui.touhoucraft.guide_book_title": "Project Shrine Maiden",
-  "gui.touhoucraft.guide_book_testbutton": "Test button"
+  "gui.touhoucraft.guide_book_testbutton": "Test button",
+  "key.jump_dialogue": "Jump dialogue",
+  "key.category.touhoucraft": "Touhoucraft"
 }
