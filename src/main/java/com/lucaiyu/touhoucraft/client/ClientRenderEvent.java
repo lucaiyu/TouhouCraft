@@ -1,7 +1,7 @@
 package com.lucaiyu.touhoucraft.client;
 
-import com.lucaiyu.touhoucraft.client.gui.Capture;
-import com.lucaiyu.touhoucraft.client.gui.Dialogue;
+import com.lucaiyu.touhoucraft.gui.Capture;
+import com.lucaiyu.touhoucraft.gui.Dialogue;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
@@ -12,7 +12,7 @@ import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-import static com.lucaiyu.touhoucraft.client.gui.Dialogue.jump;
+import static com.lucaiyu.touhoucraft.gui.Dialogue.jump;
 
 @Mod.EventBusSubscriber
 public class ClientRenderEvent {
