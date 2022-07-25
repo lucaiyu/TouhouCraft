@@ -1,8 +1,6 @@
 package com.lucaiyu.touhoucraft.key;
 
 import com.lucaiyu.touhoucraft.TouHouCraft;
-import com.lucaiyu.touhoucraft.gui.Dialogue;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.util.InputMappings;
 import net.minecraftforge.client.event.InputEvent;
@@ -18,11 +16,6 @@ public class KeyBoardInput {
 
     @SubscribeEvent
     public static void onKeyboardInput(InputEvent.KeyInputEvent event) {
-        if (JUMP_DIALOGUE.isPressed()) {
-            assert Minecraft.getInstance().player != null;
-            Dialogue.jump = true;
-            System.out.println("Keyboard event In" + Dialogue.jump);
-        }
-        System.out.println("Keyboard event Out" + Dialogue.jump);
+        return;
     }
 }
